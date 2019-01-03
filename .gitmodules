@@ -7,3 +7,15 @@
 [submodule "json-tools"]
 	path = json-tools
 	url = git@github.com:pulp-platform/json-tools.git
+[submodule "gvsoc"]
+	path = gvsoc
+	url = git@github.com:pulp-platform/gvsoc.git
+[submodule "dpi-models"]
+	path = dpi-models
+	url = git@github.com:pulp-platform/dpi-models.git
+[submodule "archi"]
+	path = archi
+	url = git@github.com:pulp-platform/archi.git
+[submodule "runner"]
+	path = runner
+	url = git@github.com:pulp-platform/runner.git

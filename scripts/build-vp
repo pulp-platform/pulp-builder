@@ -1,0 +1,21 @@
+#!/bin/bash -ex
+
+install_dir=$PWD/install
+ws_install_dir=$PWD/install/ws
+build_dir=$PWD/build
+
+export PATH=$ws_install_dir/bin:$PATH
+export PYTHONPATH=$ws_install_dir/python:$PYTHONPATH
+export PULP_CONFIGS_PATH=$ws_install_dir/configs
+
+make -C json-tools all install BUILD_DIR=$build_dir/json-tools INSTALL_DIR=$ws_install_dir
+
+make -C pulp-configs all_scons BUILD_DIR=$build_dir/pulp-configs INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
+make -C archi build BUILD_DIR=$build_dir/archi INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
+make -C dpi-models build install BUILD_DIR=$build_dir/archi INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
+make -C gvsoc build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
+make -C runner sdk.build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
