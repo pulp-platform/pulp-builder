@@ -1,0 +1,1 @@
+export PULP_CURRENT_CONFIG=gap_rev1@config_file=systems/gap_rev1.json
