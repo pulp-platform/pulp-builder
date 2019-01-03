@@ -1,3 +1,4 @@
 source ../../setup.sh
 
 pulp-run --binary test --config=gap_rev1 prepare run
+#pulp-run --binary test --config=gap_rev1 --config-opt gvsoc/trace=insn prepare run
