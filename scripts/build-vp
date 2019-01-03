@@ -14,6 +14,8 @@ make -C pulp-configs all_scons BUILD_DIR=$build_dir/pulp-configs INSTALL_DIR=$ws
 
 make -C archi build BUILD_DIR=$build_dir/archi INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
 
+make -C pulp-debug-bridge all BUILD_DIR=$build_dir/pulp-debug-bridge INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
 make -C dpi-models build install BUILD_DIR=$build_dir/archi INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
 
 make -C gvsoc build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir

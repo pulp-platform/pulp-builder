@@ -1,0 +1,7 @@
+#!/bin/bash -ex
+
+install_dir=$PWD/install
+ws_install_dir=$PWD/install/ws
+build_dir=$PWD/build
+
+rm -rf $PWD/install $PWD/build
