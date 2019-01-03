@@ -1,4 +1,3 @@
-source ../../configs/gap_rev1.sh
 source ../../setup.sh
 
 pulp-run --binary test --config=gap_rev1 prepare run
