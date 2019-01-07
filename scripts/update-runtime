@@ -1,0 +1,11 @@
+#!/bin/bash -ex
+
+git submodule update --init -- json-tools
+git submodule update --init -- pulp-configs
+git submodule update --init -- pulp-tools
+git submodule update --init -- archi
+git submodule update --init -- pulp-debug-bridge
+git submodule update --init -- hal
+git submodule update --init -- pulp-rules
+git submodule update --init -- pulp-rt
+git submodule update --init -- runner
