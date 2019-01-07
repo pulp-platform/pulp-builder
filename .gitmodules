@@ -19,3 +19,15 @@
 [submodule "runner"]
 	path = runner
 	url = https://github.com/pulp-platform/runner.git
+[submodule "hal"]
+	path = hal
+	url = https://github.com/pulp-platform/hal.git
+[submodule "pulp-rt"]
+	path = pulp-rt
+	url = https://github.com/pulp-platform/pulp-rt.git
+[submodule "pulp-rules"]
+	path = pulp-rules
+	url = https://github.com/pulp-platform/pulp-rules.git
+[submodule "pulp-tools"]
+	path = pulp-tools
+	url = https://github.com/pulp-platform/pulp-tools.git
