@@ -1,0 +1,1 @@
+export PULP_CURRENT_CONFIG=pulpissimo@config_file=systems/pulpissimo.json
