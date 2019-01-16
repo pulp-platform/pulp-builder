@@ -8,6 +8,9 @@ export PATH=$ws_install_dir/bin:$PATH
 export PYTHONPATH=$ws_install_dir/python:$PYTHONPATH
 export PULP_CONFIGS_PATH=$ws_install_dir/configs
 
+
+git submodule update --init json-tools pulp-configs pulp-tools archi pulp-debug-bridge hal pulp-rules pulp-rt runner
+
 make -C json-tools all install BUILD_DIR=$build_dir/json-tools INSTALL_DIR=$ws_install_dir
 
 make -C pulp-configs all_scons BUILD_DIR=$build_dir/pulp-configs INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
