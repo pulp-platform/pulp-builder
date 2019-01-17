@@ -1,1 +1,1 @@
-export PULP_CURRENT_CONFIG=pulp@config_file=systems/pulp.json
+export PULP_CURRENT_CONFIG=pulp@config_file=chips/pulp/pulp.json
