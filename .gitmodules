@@ -31,3 +31,6 @@
 [submodule "pulp-tools"]
 	path = pulp-tools
 	url = https://github.com/pulp-platform/pulp-tools.git
+[submodule "pulp-sdk-doc"]
+	path = pulp-sdk-doc
+	url = https://github.com/pulp-platform/pulp-sdk-doc.git
