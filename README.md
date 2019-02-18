@@ -11,7 +11,7 @@ You need to first install the Linux dependencies (see below).
 
 Choose the configuration for which you want to compile gvsoc, for example:
 
-  source config/gap_rev1.sh
+  source configs/gap_rev1.sh
 
 Then execute this script:
 
@@ -33,7 +33,7 @@ You need to first install the Linux dependencies (see below).
 
 Choose the configuration for which you want to compile the runtime, for example:
 
-  source config/gap_rev1.sh
+  source configs/gap_rev1.sh
 
 Then execute this script:
 
