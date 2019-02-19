@@ -27,3 +27,5 @@ make -C json-tools all install BUILD_DIR=$build_dir/json-tools INSTALL_DIR=$ws_i
 make -C pulp-configs all_scons BUILD_DIR=$build_dir/pulp-configs INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
 
 make -C runner sdk.build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+
+make -C plptest build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir

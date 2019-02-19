@@ -34,3 +34,6 @@
 [submodule "pulp-sdk-doc"]
 	path = pulp-sdk-doc
 	url = https://github.com/pulp-platform/pulp-sdk-doc.git
+[submodule "plptest"]
+	path = plptest
+	url = https://github.com/pulp-platform/plptest.git
