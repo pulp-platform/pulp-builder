@@ -1,8 +1,20 @@
 #!/bin/bash -ex
 
-install_dir=$PWD/install
-ws_install_dir=$PWD/install/ws
-build_dir=$PWD/build
+install_dir=$TARGET_INSTALL_DIR
+ws_install_dir=$INSTALL_DIR
+build_dir=$BUILD_DIR
+
+if [ -z "$install_dir" ]; then
+  install_dir=$PWD/install
+fi
+
+if [ -z "$ws_install_dir" ]; then
+  ws_install_dir=$PWD/install/ws
+fi
+
+if [ -z "$build_dir" ]; then
+  build_dir=$PWD/build
+fi
 
 export PATH=$ws_install_dir/bin:$PATH
 export PYTHONPATH=$ws_install_dir/python:$PYTHONPATH
