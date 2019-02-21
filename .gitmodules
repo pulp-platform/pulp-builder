@@ -32,7 +32,7 @@
 	path = pulp-tools
 	url = https://github.com/pulp-platform/pulp-tools.git
 [submodule "pulp-sdk-doc"]
-	path = pulp-sdk-doc
+	path = doc
 	url = https://github.com/pulp-platform/pulp-sdk-doc.git
 [submodule "plptest"]
 	path = plptest
