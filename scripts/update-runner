@@ -4,3 +4,5 @@ git submodule update --init -- json-tools
 git submodule update --init -- pulp-configs
 git submodule update --init -- runner
 git submodule update --init -- plptest
+git submodule update --init -- pulp-debug-bridge
+git submodule update --init -- dpi-models
