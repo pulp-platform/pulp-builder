@@ -1,0 +1,3 @@
+#!/bin/bash -ex
+
+git submodule update --init json-tools pulp-configs pulp-debug-bridge
