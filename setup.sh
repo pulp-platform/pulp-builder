@@ -23,10 +23,11 @@ add_PYTHONPATH() {
 
 scriptDir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 
-install_dir=$scriptDir/install
+install_dir=$scriptDir/install/ws
 
-add_path $install_dir/ws/bin
-add_ld_path $install_dir/ws/lib
-add_PYTHONPATH $install_dir/ws/python
+add_path $install_dir/bin
+add_ld_path $install_dir/lib
+add_PYTHONPATH $install_dir/python
 
-export PULP_CONFIGS_PATH=$install_dir/ws/configs
+export PULP_CONFIGS_PATH=$install_dir/configs
+export INSTALL_DIR=$install_dir
