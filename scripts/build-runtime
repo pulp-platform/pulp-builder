@@ -9,8 +9,6 @@ export PYTHONPATH=$ws_install_dir/python:$PYTHONPATH
 export PULP_CONFIGS_PATH=$ws_install_dir/configs
 
 
-git submodule update --init json-tools pulp-configs pulp-tools archi pulp-debug-bridge hal pulp-rules pulp-rt runner
-
 make -C json-tools all install BUILD_DIR=$build_dir/json-tools INSTALL_DIR=$ws_install_dir
 
 make -C pulp-configs all_scons BUILD_DIR=$build_dir/pulp-configs INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
@@ -25,6 +23,6 @@ make -C hal build BUILD_DIR=$build_dir/hal INSTALL_DIR=$ws_install_dir TARGET_IN
 
 make -C pulp-rules all BUILD_DIR=$build_dir/pulp-rules INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
 
-make -C pulp-rt header build install BUILD_DIR=$build_dir/pulp-rt INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
+make -C pulp-rt header pmsis build install BUILD_DIR=$build_dir/pulp-rt INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
 
 make -C runner sdk.build BUILD_DIR=$build_dir/gvsoc INSTALL_DIR=$ws_install_dir TARGET_INSTALL_DIR=$install_dir
