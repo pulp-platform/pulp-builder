@@ -1,4 +1,6 @@
 build/
+ws/
+include/
 install/
 all_state.txt
 core_state.txt
