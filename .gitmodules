@@ -37,3 +37,6 @@
 [submodule "plptest"]
 	path = plptest
 	url = https://github.com/pulp-platform/plptest.git
+[submodule "pmsis_api"]
+	path = pmsis_api
+	url = https://github.com/GreenWaves-Technologies/pmsis_api.git

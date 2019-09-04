@@ -9,3 +9,4 @@ git submodule update --init -- hal
 git submodule update --init -- pulp-rules
 git submodule update --init -- pulp-rt
 git submodule update --init -- runner
+git submodule update --init -- pmsis_api
