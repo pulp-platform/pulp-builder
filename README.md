@@ -7,41 +7,41 @@ This module is a simplified build process for the PULP SDK.
 
 ### GVSOC build
 
-You need to first install the Linux dependencies (see below).
+You need to first install the Linux dependencies (see [below](#dependencies)).
 
 Choose the configuration for which you want to compile gvsoc, for example:
 
-  source configs/gap_rev1.sh
+    $ source configs/gap_rev1.sh
 
 Then execute this script:
 
-  ./scripts/build-gvsoc
+    $ ./scripts/build-gvsoc
 
 You can open install/doc/vp/index.html to see the documentation.
 
-To use it, first source this file, this will put all install files in the PATH:
+To use it, first source this file, this will put all install files in the `PATH`:
 
-  source setup.sh
+    $ source setup.sh
 
 Then you can go to examples/fork/gap_rev1 and execute:
 
-  pulp-run --platform=gvsoc --config=gap_rev1 --binary=test prepare run
+    $ pulp-run --platform=gvsoc --config=gap_rev1 --binary=test prepare run
 
 ### Runtime build
 
-You need to first install the Linux dependencies (see below).
+You need to first install the Linux dependencies (see [below](#dependencies)).
 
 Choose the configuration for which you want to compile the runtime, for example:
 
-  source configs/gap_rev1.sh
+    $ source configs/gap_rev1.sh
 
 Then execute this script:
 
-  ./scripts/build-runtime
+    $ ./scripts/build-runtime
 
-To use it, first source this file, this will put all install files in the PATH:
+To use it, first source this file, this will put all install files in the `PATH`:
 
-  source sdk-setup.sh
+    $ source sdk-setup.sh
 
 Then you can get one of the pulp example, compile and run it.
 
