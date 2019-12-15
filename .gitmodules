@@ -1,42 +1,9 @@
-[submodule "pulp-debug-bridge"]
-	path = pulp-debug-bridge
-	url = https://github.com/pulp-platform/pulp-debug-bridge.git
 [submodule "pulp-configs"]
 	path = pulp-configs
 	url = https://github.com/pulp-platform/pulp-configs.git
 [submodule "json-tools"]
 	path = json-tools
 	url = https://github.com/pulp-platform/json-tools.git
-[submodule "gvsoc"]
-	path = gvsoc
-	url = https://github.com/pulp-platform/gvsoc.git
-[submodule "dpi-models"]
-	path = dpi-models
-	url = https://github.com/pulp-platform/dpi-models.git
-[submodule "archi"]
-	path = archi
-	url = https://github.com/pulp-platform/archi.git
 [submodule "runner"]
 	path = runner
 	url = https://github.com/pulp-platform/runner.git
-[submodule "hal"]
-	path = hal
-	url = https://github.com/pulp-platform/hal.git
-[submodule "pulp-rt"]
-	path = pulp-rt
-	url = https://github.com/pulp-platform/pulp-rt.git
-[submodule "pulp-rules"]
-	path = pulp-rules
-	url = https://github.com/pulp-platform/pulp-rules.git
-[submodule "pulp-tools"]
-	path = pulp-tools
-	url = https://github.com/pulp-platform/pulp-tools.git
-[submodule "pulp-sdk-doc"]
-	path = doc
-	url = https://github.com/pulp-platform/pulp-sdk-doc.git
-[submodule "plptest"]
-	path = plptest
-	url = https://github.com/pulp-platform/plptest.git
-[submodule "pmsis_api"]
-	path = pmsis_api
-	url = https://github.com/GreenWaves-Technologies/pmsis_api.git
