@@ -1,0 +1,11 @@
+#!/bin/bash -ex
+
+git checkout git@github.com:pulp-platform/gvsoc.git
+
+git checkout git@github.com:pulp-platform/dpi-models.git
+
+git checkout git@github.com:pulp-platform/archi.git
+
+git checkout git@github.com:pulp-platform/hal.git
+
+git checkout git@github.com:pulp-platform/pulp-debug-bridge.git

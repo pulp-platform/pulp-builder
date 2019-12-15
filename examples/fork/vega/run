@@ -1,5 +1,0 @@
-source ../../../setup.sh
-
-pulp-run --platform=gvsoc --binary test --config=vega prepare run
-
-#pulp-run --platform=gvsoc --binary test --config=vega --trace=insn prepare run

@@ -21,7 +21,7 @@ add_PYTHONPATH() {
     export PYTHONPATH="$1${PYTHONPATH:+":$PYTHONPATH"}"
 }
 
-scriptDir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+scriptDir="$(dirname "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")")"
 
 install_dir=$scriptDir/install/ws
 
@@ -31,3 +31,4 @@ add_PYTHONPATH $install_dir/python
 
 export PULP_CONFIGS_PATH=$install_dir/configs
 export INSTALL_DIR=$install_dir
+export PULP_SDK_INSTALL=$install_dir

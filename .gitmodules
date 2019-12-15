@@ -7,3 +7,9 @@
 [submodule "runner"]
 	path = runner
 	url = https://github.com/pulp-platform/runner.git
+[submodule "pulp-runtime"]
+	path = pulp-runtime
+	url = git@github.com:pulp-platform/pulp-runtime.git
+[submodule "plptest"]
+	path = plptest
+	url = https://github.com/pulp-platform/plptest.git

@@ -1,47 +1,25 @@
-# PULP SDK builder
+# PULP builder
 
 
 ## About
 
-This module is a simplified build process for the PULP SDK.
-
-### GVSOC build
-
-You need to first install the Linux dependencies (see [below](#dependencies)).
-
-Choose the configuration for which you want to compile gvsoc, for example:
-
-    $ source configs/gap_rev1.sh
-
-Then execute this script:
-
-    $ ./scripts/build-gvsoc
-
-You can open install/doc/vp/index.html to see the documentation.
-
-To use it, first source this file, this will put all install files in the `PATH`:
-
-    $ source setup.sh
-
-Then you can go to examples/fork/gap_rev1 and execute:
-
-    $ pulp-run --platform=gvsoc --config=gap_rev1 --binary=test prepare run
+This module is a build process for the PULP runtime.
 
 ### Runtime build
 
 You need to first install the Linux dependencies (see [below](#dependencies)).
 
+Get the submodules:
+
+    $ git submodule update --init
+
 Choose the configuration for which you want to compile the runtime, for example:
 
-    $ source configs/gap_rev1.sh
+    $ source configs/pulp.sh
 
 Then execute this script:
 
     $ ./scripts/build-runtime
-
-To use it, first source this file, this will put all install files in the `PATH`:
-
-    $ source sdk-setup.sh
 
 Then you can get one of the pulp example, compile and run it.
 
@@ -76,12 +54,9 @@ You can have a look [here](https://github.com/pulp-platform/pulp-riscv-gnu-toolc
 
 ### Setup
 
-All the dependencies required to build the SDK must be setup through environment variables.
+The toolchain must be built separately and the following environment variable should set:
 
-The toolchain must be built separately and the following environment variable should 
-point to it:
-
-    $ export PULP_RISCV_GCC_TOOLCHAIN=<path to the folder containing the bin folder of the toolchain>
+    $ export PATH=<path to the folder containing the bin folder of the toolchain>/bin:$PATH
 
 RTL platforms should also be built separately (see the platform documentation for that) and the following
 environment variable must point to the folder where the platform was installed (this example is for pulpissimo):

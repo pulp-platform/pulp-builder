@@ -1,1 +1,1 @@
-export PULP_CURRENT_CONFIG_ARGS=platform=board
+export PULPRUN_PLATFORM=board

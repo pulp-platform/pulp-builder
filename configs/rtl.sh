@@ -1,1 +1,1 @@
-export PULP_CURRENT_CONFIG_ARGS=platform=rtl
+export PULPRUN_PLATFORM=rtl
