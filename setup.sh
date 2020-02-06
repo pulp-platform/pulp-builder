@@ -31,3 +31,4 @@ add_PYTHONPATH $install_dir/python
 
 export PULP_CONFIGS_PATH=$install_dir/configs
 export INSTALL_DIR=$install_dir
+export PULP_SDK_INSTALL=$scriptDir
